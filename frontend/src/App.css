@@ -1,0 +1,427 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  background: #d1d1d1;
+  min-height: 83vh;
+  font-family: 'Work Sans', sans-serif;
+}
+
+/* header */
+
+header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25px;
+  background-color: #1b1b1a;
+  background-image: url("https://www.transparenttextures.com/patterns/polonez-pattern.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+header a h1 {
+  font-size: 2.5rem;
+}
+
+a {
+  text-decoration: none;
+  color:#f80505
+}
+
+.blue {
+  color: blue;
+}
+
+nav a {
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+
+
+/* home */
+
+.home {
+  width: 100%;
+  overflow: auto;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+
+/* car-details */
+
+.car-details {
+  width: 250px;
+  height: 300px;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  -webkit-box-shadow: -1px 2px 19px 1px rgba(99, 99, 101, 1);
+  -moz-box-shadow: -1px 2px 19px 1px rgba(99, 99, 101, 1);
+  box-shadow: -1px 2px 19px 1px rgba(99, 99, 101, 1);
+}
+
+.car-details h3 { 
+  text-align: center;
+}
+
+.car-details img {
+  width: 90%;
+  height: 55%;
+}
+
+.car-info {
+  align-self: flex-start;
+}
+
+.price {
+  color:#f80505;
+  font-weight: bold;
+}
+
+.price-info {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.price-info a {
+  color: blue;
+  opacity: .65
+}
+
+.price-info a:hover {
+  opacity: 1;
+}
+
+.car-info, .price-info {
+  padding: 0 5px;
+}
+
+
+/* sell-form */
+
+.sell-form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  text-align: center;
+  margin: 40px auto;
+  align-items: center;
+  border-radius: 7px;
+  -webkit-box-shadow: -1px 2px 19px 1px rgba(99, 99, 101, 1);
+  -moz-box-shadow: -1px 2px 19px 1px rgba(99, 99, 101, 1);
+  box-shadow: -1px 2px 19px 1px rgba(99, 99, 101, 1);
+}
+
+.sell-form label {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.sell-form input {
+  text-align: center;
+  padding: 5px;
+  border-radius: 7px;
+  opacity: .65;
+}
+
+.sell-form input:focus {
+  opacity: 1;
+}
+
+.sell-form .title {
+  width: 80%;
+}
+
+.sell-form textarea {
+  width: 70%;
+  max-width: 70%;
+  padding: 4px;
+  border-radius: 7px;
+  opacity: .65;
+}
+
+.sell-form textarea:focus {
+  opacity: 1;
+}
+
+.sell-form button {
+  margin: 20px auto 30px auto;
+  width: 30%;
+  border-radius: 7px;
+  padding: 5px;
+  font-size: 1rem;
+  color: white;
+  background-color: #051ad5;
+  opacity: .65;
+}
+
+.sell-form button:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+select {
+  border-radius: 7px;
+  padding: 5px;
+}
+
+.material-symbols-outlined:hover {
+  cursor: pointer
+}
+
+/* car-page */
+
+.car-page {
+  width: 90%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  -webkit-box-shadow: -1px 2px 19px 1px rgba(99, 99, 101, 1);
+  -moz-box-shadow: -1px 2px 19px 1px rgba(99, 99, 101, 1);
+  box-shadow: -1px 2px 19px 1px rgba(99, 99, 101, 1);
+  margin: 30px auto;
+}
+
+.car-page h1 {
+  align-self: flex-start;
+  padding: 10px 0;
+}
+
+.car-page h2, .car-page h3 {
+  align-self: flex-start;
+  padding: 10px 0;
+}
+
+
+.car-page h1, .car-page h2 {
+  color: blue;
+}
+
+.car-page h3 {
+  color: red;
+}
+
+.description {
+  align-self: center;
+  margin: 50px 0;
+  padding: 15px;
+  border-radius: 7px;
+  width: 90%;
+  min-height: 30vh;
+  -webkit-box-shadow: -1px 2px 19px 1px rgba(99, 99, 101, 1);
+  -moz-box-shadow: -1px 2px 19px 1px rgba(99, 99, 101, 1);
+  box-shadow: -1px 2px 19px 1px rgba(99, 99, 101, 1);
+  word-spacing: 2px;
+  line-height: 150%;
+  text-align: justify;
+}
+
+.car-page i {
+  align-self: flex-end;
+  color: red;
+  font-size: 2rem;
+}
+
+.contact {
+  background-color: #f2f2f2;
+  margin: 20px;
+  padding: 20px;
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  display: flex;
+  border-radius: 7px;
+  flex-direction: column;
+  justify-content: center;
+  max-height: 150px;
+  align-items: center;
+  -webkit-box-shadow: -1px 2px 19px 1px rgba(99, 99, 101, 1);
+  -moz-box-shadow: -1px 2px 19px 1px rgba(99, 99, 101, 1);
+  box-shadow: -1px 2px 19px 1px rgba(99, 99, 101, 1);
+}
+
+.contact .number {
+  margin-bottom: 10px;
+}
+
+.car-page-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* login */
+
+.login, .signup {
+  width: 30%;
+  height: 300px;
+  border: 1px solid black;
+  border-radius: 7px;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.login-form, .signup-form {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+}
+
+.login-form input, .signup-form input {
+  text-align: center;
+  margin-bottom: 15px;
+  padding: 5px;
+  border-radius: 7px;
+  opacity: .65;
+}
+
+.login-form input:focus, .signup-form input:focus {
+  opacity: 1;
+} 
+
+.login-form button, .signup-form button {
+  width: 30%;
+  margin: 0 auto;
+  padding: 6px;
+  border-radius: 7px;
+  font-size: 1.2rem;
+  opacity: .65;
+  color: #fff;
+  background-color: blue;
+}
+
+.login-form button:hover, .signup-form button:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+
+/* gallery */
+
+.gallery-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  max-width: 620px;
+  margin: 50px auto;
+}
+
+.gallery-wrap .single {
+  width: 200px;
+  cursor: pointer;
+}
+
+.gallery-wrap .single img {
+  max-width: 100%;
+}
+
+.gallery-wrap .single img:hover {
+  transform: scale(1.02);
+}
+
+.slider-wrap {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.slider-wrap .btn-close, .slider-wrap .btn-prev, .slider-wrap .btn-next {
+  position: fixed;
+  cursor: pointer;
+  opacity: 0.6;
+  color: #fff;
+  z-index: 9999;
+}
+
+.btn-next:hover, .btn-prev:hover, .btn-close:hover {
+  opacity: 1;
+}
+
+.slider-wrap .btn-close {
+  top: 40px;
+  right: 40px;
+}
+
+.slider-wrap .btn-prev {
+  top: 50%;
+  transform: translateY(-50%);
+  left: 40px;
+}
+
+.slider-wrap .btn-next {
+  top: 50%;
+  transform: translateY(-50%);
+  right: 40px;
+}
+
+.full-screen-image {
+  width: calc(100% - 40px);
+  height: calc(100% - 40px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.full-screen-image img {
+  max-width: 65%;
+  max-height: 90%;
+  pointer-events: none;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */  
+}
+
+/* footer */
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding-bottom: 5px;
+  text-align: center;
+}
+
+footer p {
+  color: #000;
+  opacity: 0.65;
+}
+
+
+/* error */
+
+.error {
+  margin: 15px auto 30px auto;
+  border: 2px solid #f64848;
+  background-color: #FF9494; 
+  padding: 7px;
+}
